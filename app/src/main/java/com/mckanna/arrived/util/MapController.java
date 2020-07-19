@@ -47,7 +47,7 @@ public class MapController {
             }
         });
     }
-d
+
     public void moveMapToCurrentLocation() {
         Task<Location> getLocation = client.getLastLocation();
         getLocation.addOnSuccessListener(activity, new OnSuccessListener<Location>() {

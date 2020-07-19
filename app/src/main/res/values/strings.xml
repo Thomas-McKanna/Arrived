@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Arrived</string>
+
+    <string name="question_who_should_know">Who should know when you arrive?</string>
+
+    <string name="hint_phone_number">(555) 555-5555</string>
+
+    <string name="msg_start_trip">Start my trip</string>
+    <string name="msg_pick_from_contacts">Pick from contacts</string>
+    <string name="msg_pick_contacts">Pick contacts</string>
+    <string name="msg_add">Add</string>
+    <string name="msg_remove">Remove</string>
+    <string name="msg_or">or</string>
+    <string name="msg_start">Start</string>
+    <string name="msg_contacts_notified">Your chosen contacts have been messaged.</string>
+    <string name="msg_pause_trip">Pause Trip</string>
+    <string name="msg_resume_trip">Resume Trip</string>
+    <string name="msg_stop_trip">Stop Trip</string>
+    <string name="msg_destination">DESTINATION:</string>
+    <string name="msg_will_be_messaged">WILL BE MESSAGED:</string>
+    <string name="msg_battery_explanation">Select the largest number of minutes you are willing to wait before your contacts are notified after you arrive at your destination:</string>
+    <string name="msg_1_minute">1</string>
+    <string name="msg_5_minute">5</string>
+    <string name="msg_10_minute">10</string>
+    <string name="msg_30_minute">30</string>
+    <string name="msg_60_minute">60</string>
+    <string name="msg_location_interval">Location retrieval interval (minutes):</string>
+    <string name="msg_highest_battery_usage">(highest battery usage)</string>
+    <string name="msg_lowest_battery_usage">(lowest battery usage)</string>
+    <string name="msg_contacts_will_not__be_notified">Your chosen contacts will not be notified when you arrive.</string>
+    <string name="msg_yes">yes</string>
+    <string name="msg_no">no</string>
+    <string name="msg_you_have_arrived">You have arrived!</string>
+    <string name="msg_start_a_new_trip">Start a new trip</string>
+    <string name="msg_message_sent">Sent</string>
+    <string name="msg_message_failed">Failed</string>
+    <string name="msg_contact_notification_report">Contact notification report:</string>
+    <string name="msg_dots">.............................................................................................................................</string>
+    <string name="msg_choose_specific_location">Please choose a more specific location.</string>
+    <string name="msg_no_recent_trips">You haven\'t taken any trips yet. To make a new one, click on the button in the bottom-right corner of the screen.</string>
+    <string name="msg_welcome">Welcome to Arrived!</string>
+
+    <string name="tools_address">100 W 13th St., Rolla, MO</string>
+    <string name="tools_contacts_string">(555) 234-5314, (555) 265-5453, (555) 157-9891</string>
+
+    <string name="title_permission_needed">Your permission is needed</string>
+    <string name="title_recent_trips">Repeat a Recent Trip</string>
+    <string name="title_tracking_location">Your trip progress is currently being monitored.</string>
+    <string name="title_arrived">You have arrived!</string>
+    <string name="title_cancel_trip">Cancel this trip?</string>
+
+    <string name="rationale_location_permission">To determine when you have arrived at your destination, access to your location is needed.</string>
+    <string name="rationale_read_contacts_permission">To retrieve the phone number of one of your contacts, access to your contacts is needed.</string>
+    <string name="rationale_send_sms_permission">To notify your selected contacts upon your arrival, permission to automatically send text messages is needed.</string>
+
+    <string name="error_invalid_phone_number">Invalid phone number. Please try again.</string>
+    <string name="error_duplicate_phone_number">Cannot add a duplicate phone number.</string>
+
+    <string name="notification_channel_name">Arrived Application</string>
+    <string name="notification_channel_description">A notification will appear upon your arrival at the chosen destination. You will not receive any notifications from this app other than upon arrival.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

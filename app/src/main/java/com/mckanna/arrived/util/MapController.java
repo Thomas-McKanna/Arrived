@@ -31,7 +31,7 @@ public class MapController {
     }
 
     public void moveCamera(LatLng position) {
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 17.0f));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(position, 17.0f), 1000, null);
     }
 
     public Marker placeMarkerAtLatLng(LatLng position) {

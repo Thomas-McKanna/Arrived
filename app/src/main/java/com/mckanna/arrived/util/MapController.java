@@ -8,6 +8,7 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -19,6 +20,7 @@ public class MapController {
     private LocationCallback locationCallback;
     private LocationClient client;
     private Activity activity;
+    private Marker currentLocationMarker;
 
     public MapController(Activity activity, GoogleMap map) {
         map.getUiSettings().setMapToolbarEnabled(false);
@@ -32,8 +34,8 @@ public class MapController {
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 17.0f));
     }
 
-    public void placeMarkerAtLatLng(LatLng position) {
-        map.addMarker(new MarkerOptions()
+    public Marker placeMarkerAtLatLng(LatLng position) {
+        return map.addMarker(new MarkerOptions()
             .position(position));
     }
 
@@ -43,7 +45,9 @@ public class MapController {
             @Override
             public void onSuccess(Location location) {
                 LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-                moveCamera(latLng);
+                if (currentLocationMarker != null)
+                    currentLocationMarker.remove();
+                currentLocationMarker = placeMarkerAtLatLng(latLng);
             }
         });
     }
@@ -54,7 +58,7 @@ public class MapController {
             @Override
             public void onSuccess(Location location) {
                 LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-                placeMarkerAtLatLng(latLng);
+                moveCamera(latLng);
             }
         });
     }

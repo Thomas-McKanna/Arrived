@@ -7,7 +7,7 @@ import com.mckanna.arrived.data.Destination;
 
 public class GeofencingRequestFactory {
     private static final LatLng FAKE_DESTINATION = new LatLng(45.391, -121.701);
-    private static final int GEOFENCE_RADIUS_IN_METERS = 1000;
+    private static final int GEOFENCE_RADIUS_IN_METERS = 250;
 
     public static GeofencingRequest makeGeofencingRequest(Destination destination, String requestId) {
         Geofence geofence = getGeofenceForLatLng(destination.getLatLng(), requestId);

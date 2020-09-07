@@ -29,6 +29,7 @@ The following were used on this project:
 - Intent to receive contacts from phone's contact app
 - Intent to send SMS messages to contacts
 - MVVM architecture
+- Room database
 - View binding
 
 ## License
